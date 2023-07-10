@@ -89,3 +89,6 @@ let inputSum = 0;
 let productSum = 0;
 let change = 0;
 
+const itemList = {
+    "item1" : {'name':'아메리카노', 'count':0, 'price':5000},
+}
