@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/index.css">
-  <script src="./js/index.js"></script>
+  <script src="./js/index.js" defer></script>
   <title>Coffee Cat</title>
 </head>
 
@@ -81,12 +81,12 @@
         <button onclick="inputMoney(this)">5000</button>
         <button onclick="inputMoney(this)">50000</button> -->
 
-        <button id="money1">100</button>
-        <button id="money2">500</button>
-        <button id="money3">1000</button>
-        <button id="money4">5000</button>
-        <button id="money5">10000</button>
-        <button id="money5">50000</button>
+        <button class="money_btn" id="money1">100</button>
+        <button class="money_btn" id="money2">500</button>
+        <button class="money_btn" id="money3">1000</button>
+        <button class="money_btn" id="money4">5000</button>
+        <button class="money_btn" id="money5">10000</button>
+        <button class="money_btn" id="money5">50000</button>
 
 
       </div>
@@ -99,8 +99,8 @@
       </div>
 
       <div class="flexbox">
-        <button class="calc" onclick="calc()">계산하기</button>
         <button class="reload" onclick="window.location.reload()">다시하기</button>
+        <button class="calc" onclick="calc()">계산하기</button>
       </div>
 
       <div>거스름돈 <input id="change" type="text" value="" disabled></div>
