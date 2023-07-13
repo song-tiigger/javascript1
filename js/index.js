@@ -120,4 +120,12 @@ for(var i = 0; i<clickMoney.length; i++) {
   clickMoney[i].addEventListener('click', inputMoney);
 }
 
-
+const clickItem = (event) => {
+  const targetItem = Number(event.target)
+  // 사진을 클릭하면
+  // 1 리스트에 클릭한 항목이 추가되어야 함
+  //   ㄴ 사진을 클릭했을 때 금액을 어떻게 받아올지? - 문제다  
+  // 2 '총 합계'에 금액이 실시간으로 계산되어야 함
+  //   ㄴ 금액이 계산될 때는 클릭한 항목의 가격 * 수량
+  //   ㄴ 리스트에 있는 모든 금액을 더해서 보여주어야 함
+}
