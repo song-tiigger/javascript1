@@ -101,58 +101,23 @@ const itemList = {
   "item9" : {'name':'녹차', 'count':0, 'price':6000}
 }
 
-const moneyList = [100, 500, 1000, 5000, 10000, 50000];
-
-// //금액 버튼 클릭하면 투입 금액에 누적
-// function inputMoney(btn) {
-//   var $input_money = document.querySelector('#input_money');
-//   inputSum += Number(btn.innerHTML);
-//   $input_money.setAttribute('value', inputSum);
-// };
-
 const render = () => {
-  document.getElementById("input_money").innerHTML = currentMoney.toString();
+  document.getElementById("input_money").innerHTML = currentMoney;
 };
 
 const inputMoney = (event) => {
-  // const targetMoney = event.target;
-  // const moneyIndex = targetMoney.getAttribute('data-index');
-  // const money = moneyList[moneyIndex];
-
   const targetMoney = Number(event.target.innerText);
-  console.log(targetMoney);
+  // console.log(targetMoney);
 
   currentMoney += targetMoney;
 
   render();
 }
 
-document.querySelector(".money_btn").addEventListener("click", inputMoney);
+let clickMoney = document.querySelectorAll(".money_btn");
 
+for(var i = 0; i<clickMoney.length; i++) {
+  clickMoney[i].addEventListener('click', inputMoney);
+}
 
-
-
-// moneyList.forEach((item, index) => {
-//   let $input_money = document.getElementById("input_money");
-//   $input_money.innerHTML = currentMoney;
-  
-// });
-
-
-
-// function inputMoney() {
-
-//   for (let i; i<moneyList.length; i++) {
-//     inputSum += moneyList[i];
-//     console.log(inputSum);
-//   }
-//   let $input_money = document.getElementById("input_money");
-//   $input_money.innerHTML = inputSum;
-// }
-
-// window.onload = function() {
-//   document.getElementById("money1").addEventListener("click", inputMoney);
-
-
-// }
 
