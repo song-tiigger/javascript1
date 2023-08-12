@@ -71,7 +71,7 @@ h1 + div > img {
     cursor: pointer;
 }
 
-#order_list {
+#order_list_box {
     position: relative;
     width: 32%;
     padding: 20px;
@@ -80,18 +80,25 @@ h1 + div > img {
     border-radius: 20px;
 }
 
-#order_list div {
+#order_list_box div {
     position: absolute;
-    bottom: 20px; left: 20px;
+    top: 20px; left: 20px;
     font-weight: 600;
 }
 
-#order_list p {
+#order_list_box p {
     padding: 14px 10px;
     border-bottom: 1px solid #ddd;
+    background-color: red;
 }
 
-#order_list div #total_price {
+#order_list_box #total_price_box {
+    position: absolute;
+    top: 120px;
+    background-color: pink;
+}
+
+#order_list_box #total_price_box #total_price {
     font-size: 24px;
     font-weight: 600;
     text-align: right;
